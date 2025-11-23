@@ -1,0 +1,253 @@
+/*
+  PALETA DE CORES:
+  Fundo Principal: #1a202c (Azul Ardósia Escuro)
+  Fundos Secundários: #2d3448 (Cinza Azulado) - Ajuste leve
+  Texto Principal: #e2e8f0 (Branco Suave)
+  Destaque: #00aaff (Azul Elétrico)
+*/
+
+body {
+    background-color: #1a202c;
+    /*texto Principal*/
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+    animation: fadeInPage 0.5s ease-out forwards;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #e2e8f0; /*cor do texto principal*/
+    font-weight: bold;
+}
+
+main section {
+    /* Adiciona um padding vertical torno de cada seção */
+    padding: 30px ;
+}
+
+main {
+    margin-top: 40px;
+    padding: 15px;
+    margin-bottom: 60px;
+}
+
+/* --- SEÇÕES PRINCIPAIS --- */
+
+/* Fundo da Barra de Navegação */
+nav {
+    background-color: #2d3748; /* Fundo Secundário */
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Efeito Hover com a Cor de Destaque */
+nav a:hover {
+    color: #00aaff;
+}
+
+/* Tipografia da Navegação */
+nav a {
+    text-transform: uppercase;
+    letter-spacing: 0.5px; 
+    font-size: 14px; 
+}
+
+/* Fundo da Faixa do Header */
+header {
+    background-color: #2d3748; /* Fundo Secundário */
+    margin-left: -50px;
+    margin-right: -50px;
+    padding: 20px 90px; 
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #00aaff; 
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    color: #00aaff;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #e2e8f0;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+}
+
+/* Fundo Principal do Rodapé */
+.site-footer {
+    background-color: #2d3748; /* Fundo Secundário */
+    color: #e2e8f0;
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; /* Centraliza horizontalmente */
+    padding-top: 30px;
+    padding-bottom: 40px; 
+}
+
+.social-icons-footer {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    margin-bottom: 20px; 
+    width: 100%; 
+}
+
+.social-icons-footer a {
+    display: flex;
+    flex-direction: column; /* Coloca Imagem em cima, texto embaixo */
+    align-items: center; /* Centraliza a imagem e o texto */
+    text-decoration: none;
+    color: #e2e8f0;
+    transition: color 0.3s ease; /* Transição suave no hover */
+}
+
+.social-icons-footer img {
+    width: 32px; 
+    height: 32px;
+    margin-bottom: 5px; 
+    filter: brightness(0.9); /* Deixa os ícones um pouco mais escuros */
+    transition: filter 0.3s ease;
+}
+
+.social-icons-footer a:hover {
+    color: #00aaff; 
+}
+.social-icons-footer a:hover img {
+    filter: brightness(1) drop-shadow(0 0 5px #00aaff); 
+}
+
+.footer-copyright p {
+    font-size: 12px;
+    opacity: 0.7; 
+    padding-top: 10px;
+    border-top: 1px solid rgba(226, 232, 240, 0.1); 
+    width: 100%;
+    text-align: center;
+}
+
+/* --- ESTILOS PROJETOS --- */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 40px 0;
+}
+
+/* Estilo do Card Individual */
+.project-card {
+    background-color: #2d3748; /* Fundo Secundário */
+    border-radius: 8px;
+    overflow: hidden; /* Garante que a imagem se ajuste ao border-radius */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 170, 255, 0.3); 
+}
+
+.project-image {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.project-details {
+    padding: 20px;
+}
+
+.project-details h3 {
+    color: #00aaff; 
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+/* Container dos Botões */
+.project-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* --- ESTILOS DOS BOTÕES --- */
+
+.btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    flex-grow: 1; 
+}
+
+/* Botão Principal (Ver Projeto) */
+.btn-primary {
+    background-color: #00aaff; 
+    color: #1a202c; 
+}
+
+.btn-primary:hover {
+    background-color: #00bfff;
+    transform: translateY(-1px);
+}
+
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #e2e8f0; 
+    color: #e2e8f0;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(0, 170, 255, 0.1); 
+    border-color: #00aaff;
+    color: #00aaff;
+}
+
+
+/* --- ANIMAÇÃO CORRIGIDA - DEFINIÇÃO --- */
+/* Deve ficar no final do arquivo */
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
